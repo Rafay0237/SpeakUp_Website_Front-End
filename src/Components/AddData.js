@@ -15,7 +15,7 @@ export default function AddData(){
         let url="";
         const formData=new FormData();
         formData.append('file',file)
-       await axios.post('http://localhost:5000/upload',formData)
+       await axios.post('https://cute-blue-chiton-fez.cyclic.app/upload',formData)
         .then(res=>{
           url=res.data.url;
         })
@@ -26,7 +26,7 @@ export default function AddData(){
           url,
           data,
         }
-        await axios.post("http://localhost:5000/"+name, PostObject).then((response) => {
+        await axios.post("https://cute-blue-chiton-fez.cyclic.app/"+name, PostObject).then((response) => {
           console.log(response.data.message);
         });
         setName("")
@@ -65,8 +65,8 @@ export default function AddData(){
             :(
               <div className='EnterName'>
                 <h1 id='selectH'>What do you want to Add </h1>
-                <button className='Article' onClick={()=>setName('Articles')}>Article</button>
-                <button className='Portfolio' onClick={()=>setName('Portfolios')}> Portfolio</button>
+                <button className='Article' onClick={()=>setName('articles')}>Article</button>
+                <button className='Portfolio' onClick={()=>setName('portfolios')}> Portfolio</button>
                 </div>
               )}
             </div>
