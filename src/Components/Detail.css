@@ -1,0 +1,35 @@
+.detail-title{
+    padding:50px;
+    margin-bottom:20px;
+    font-size:60px;
+    font-weight:bolder;
+    text-align:center;
+    background-color:#FDEFE4
+}
+.detail-img{
+     height: 30%; 
+     width: 50% ;
+     margin-bottom:50px;
+     justify-content: left;
+}
+.data{
+    margin-bottom: 50px;
+    width: 55%;
+    margin-left:20px;
+    text-align: left;
+    font-size: larger;
+}
+@media(max-width:768)
+{
+    .detail-title{
+        padding:50px;
+        margin-bottom:20px;
+        font-size:1.2rem;
+    }
+    .detail-img{
+         margin-bottom:50px
+    }
+    .data{
+        overflow:hidden;
+    }
+}

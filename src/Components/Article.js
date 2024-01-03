@@ -21,12 +21,12 @@ function GetData() {
   if (isLoading) return <h1 className='header'>Loading...</h1>
 
   if (error) return <h1 className='header'>An error has occurred: {error.message }</h1>
-  let name='Articles'
+  let name='articles'
   return (
     <div className='row mapRow'>
       {data.map(card=>(
         <>
-        <Card card={card} name={name} key={card._id}/>
+        <Card card={card} name={name} />
         </>
       ))}
     </div>

@@ -23,7 +23,7 @@ function GetData() {
   
 
   if (error) return <h1>An error has occurred: {error.message }</h1>
-  let name='Portfolios'
+  let name='portfolios'
   return (
     <div className='row mapRow '  >
       {data.map(card=>(

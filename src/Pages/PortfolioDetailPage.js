@@ -15,7 +15,7 @@ function PortfolioDetailPage() {
 function GetData() {
     let {id}=useParams();
   const { isLoading, error, data } = useQuery('repoData', () =>
-    fetch('http://localhost:5000/Portfolios/'+id).then(res =>
+    fetch('https://cute-blue-chiton-fez.cyclic.app/portfolios/'+id).then(res =>
       res.json()
     )
   )
