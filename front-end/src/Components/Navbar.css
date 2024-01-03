@@ -1,0 +1,63 @@
+.nav{
+position: fixed;
+font-size: x-large;
+padding: 20px 20px 20px 20px;
+display: inline-flex;
+z-index: 9;
+background-color: white;
+}
+#SpeakUp{
+margin-right: 500px;
+margin-left: 50px;
+color: black;
+font-weight: bold ;
+text-decoration: none;
+}
+#WebName{
+    font-size: x-large;
+}
+#Article{
+    margin-right: 70px;
+    color: black;
+}
+#Portfolio{
+    margin-right: 70px;
+    color: black;
+}
+#AddData{
+    margin-right: 70px;
+    color: black;
+}
+#WebName:hover{
+color: rgb(221, 151, 22);
+}
+@media (max-width: 1200px) {
+    #SpeakUp{
+        margin-right: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        font-size: 0.7rem;
+        }
+        #WebName{
+        font-size: 1rem;
+        }
+        #SpeakUp{
+        margin-right: 40px;
+        margin-left: 4px;
+        }
+        #Article{
+            margin-right: 7px;
+            padding-top: 3px;
+        }
+        #Portfolio{
+            margin-right: 7px;
+            padding-top: 3px;
+        }
+        #AddData{
+            margin-right: 7px;
+            padding-top: 3px;
+        }
+}

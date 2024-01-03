@@ -1,0 +1,91 @@
+.submitData{
+    text-align: center;
+    margin-top: 26%;
+    background-color: black;
+    color: white;
+    padding: 50px 20px 50px 20px;
+    position: sticky;
+}
+label{
+    margin-right: 10px;
+}
+input{
+    margin-right: 30px;
+}
+button{
+    margin-top: 30px;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+button:hover{
+    background-color: aliceblue;
+}
+.Entername {
+    font-weight: bold;
+    font-size: xx-large;
+}
+#selectH{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+button{
+    width: 200px;
+    height: 60px;
+    font-weight: 700;
+    font-size: x-large;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+.Article{
+    margin-left: 25%;
+}
+.Portfolio{
+    margin-left: 20%;
+}
+@media (max-width: 768px) {
+    .submitData{
+        margin-top: 100%;
+        display: block;
+    }
+    label{
+        margin-right: 0px;
+    }
+    input{
+        margin-right: 0px;
+    }
+    button{
+        margin-top: 30px;
+        width: 50px;
+        height: 25px;
+        border-radius: 5px;
+        border: 2px solid white;
+    }
+    .Entername {
+        font-size: large;
+    }
+    #selectH{
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 5%;
+        font-size: x-large;
+    }
+    
+    button{
+        width: 150px;
+        height: 50px;
+        font-weight: 700;
+        font-size: large;
+        border-radius: 7px;
+        border: 2px solid black;
+    }
+    .Article{
+        margin-left: 30%;
+    }
+    .Portfolio{
+        margin-left: 30%;
+    }
+}

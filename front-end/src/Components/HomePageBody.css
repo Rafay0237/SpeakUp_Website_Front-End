@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+.firstDiv{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+.Header{
+font-size: 3.8rem;
+font-weight: bolder;
+text-transform: uppercase;
+font-family: 'Oswald';
+}
+h4{
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+#FirstDivButton{
+    background-color: #FF059D;
+    width: 30%;
+    height: 55px;
+    border-radius: 28px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+.secondDiv{
+ background-color: black;
+ color: white;
+ height: 125px;
+ display: inline-flex;
+ width: 100%;
+ justify-content: center;
+ padding-top: 2%;
+ font-family: 'Oswald';
+}
+.secondDivHeader{
+font-size: 3.7rem;
+padding-left: 25px;
+padding-right: 25px;
+}
+.secondDivText{
+    padding-top: 15px;
+font-size: large;
+}
+
+@media (max-width: 768px) {
+    .firstDiv{
+        margin-bottom: 25px;
+        padding-top: 25px;
+    }
+    .Header{
+    font-size: 1rem;
+    }
+    h4{
+        font-size: 0.6rem;
+    }
+    
+    #FirstDivButton{
+        background-color: #FF059D;
+        width: 30%;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    .secondDiv{
+     height: 55px;
+     overflow-x: scroll;
+     width: 98%;
+    }
+    .secondDivHeader{
+    font-size: 0.8rem;
+    padding-left: 8px;
+    padding-right: 8px;
+    }
+    .secondDivText{
+        padding-top: 7px;
+    font-size: 0.4rem;
+    }
+
+  }
