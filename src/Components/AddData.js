@@ -15,7 +15,13 @@ export default function AddData(){
         let url="";
         const formData=new FormData();
         formData.append('file',file)
-       await axios.post('https://cute-blue-chiton-fez.cyclic.app/upload',formData)
+        
+        const requestOptions = {
+          method: "POST", 
+        headers: { "Content-Type": "multipart/form-data" }, 
+          body: formData 
+        };
+       await axios.post('https://cute-blue-chiton-fez.cyclic.app/upload',requestOptions)
         .then(res=>{
           url=res.data.url;
         })
