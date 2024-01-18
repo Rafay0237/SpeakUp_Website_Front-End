@@ -24,7 +24,7 @@ export default function AddData() {
           "https://illustrious-froyo-6855b5.netlify.app",
       },
       body: formData,
-      mode: "cors",
+      mode: "no cors",
     };
 
     fetch("https://cute-blue-chiton-fez.cyclic.app/upload", requestOptions)
