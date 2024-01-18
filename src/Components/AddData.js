@@ -20,6 +20,7 @@ export default function AddData() {
       method: "POST",
       headers: { "Content-Type": "multipart/form-data" },
       body: formData,
+      mode: 'cors'
     };
    
     fetch("https://cute-blue-chiton-fez.cyclic.app/upload", requestOptions)
