@@ -18,15 +18,19 @@ export default function AddData() {
 
     const requestOptions = {
       method: "POST",
-      headers: { "Content-Type": "multipart/form-data" },
+      headers: {
+        "Content-Type": "multipart/form-data",
+        "Access-Control-Allow-Origin":
+          "https://illustrious-froyo-6855b5.netlify.app",
+      },
       body: formData,
-      mode: 'cors'
+      mode: "cors",
     };
-   
+
     fetch("https://cute-blue-chiton-fez.cyclic.app/upload", requestOptions)
       .then((res) => {
         url = res.data.url;
-      }) 
+      })
       .catch((error) => {
         console.error(error);
       });
