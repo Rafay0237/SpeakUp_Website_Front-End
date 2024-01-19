@@ -20,6 +20,8 @@ export default function AddData() {
       method: "POST",
       headers: {
         "Content-Type": "multipart/form-data",
+        "Access-Control-Allow-Origin":
+          "https://illustrious-froyo-6855b5.netlify.app",
       },
       body: formData,
     };
