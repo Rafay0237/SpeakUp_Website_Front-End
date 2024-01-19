@@ -24,7 +24,7 @@ export default function AddData() {
       body: formData,
     };
 
-    fetch("https://cute-blue-chiton-fez.cyclic.app/upload", requestOptions)
+    await fetch("https://cute-blue-chiton-fez.cyclic.app/upload", requestOptions)
       .then((res) => {
         url = res.data.url;
       })
