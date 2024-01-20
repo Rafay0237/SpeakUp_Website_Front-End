@@ -9,10 +9,12 @@ export default function AddData() {
   let [data, setData] = useState("");
   let [name, setName] = useState(false);
   let [title, setTitle] = useState("");
-  let [file, setFile] = useState("");
+  let [file, setFile] = useState(undefined);
 
-  const Save = async (title, data, file) => {
+  const Save = async (file) => {
     let url = "";
+    if(file===undefined)
+    return
     if(file.size>4000000)
     {
       console.log('Image size is tooo big')
@@ -61,7 +63,6 @@ export default function AddData() {
             data="<p>Hello from CKEditor&nbsp;5!</p>"
             onChange={(event, editor) => {
               setData(editor.getData());
-              console.log(data);
             }}
           />
           <div className="box submitData">
@@ -83,7 +84,7 @@ export default function AddData() {
             />
             <br />
             <Link to={"/" + name}>
-              <button onClick={() => Save(title, data, file)}>Submit</button>
+              <button onClick={() => Save(file)}>Submit</button>
             </Link>
           </div>
         </>
