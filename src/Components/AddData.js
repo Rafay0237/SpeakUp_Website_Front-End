@@ -13,16 +13,16 @@ export default function AddData() {
 
   const Save = async (title, data, file) => {
     let url = "";
+    if(file.size>4000000)
+    {
+      console.log('Image size is tooo big')
+      return
+    }
     const formData = new FormData();
     formData.append("file", file);
 
     const requestOptions = {
       method: "POST",
-      headers: {
-        "Content-Type": "multipart/form-data",
-        "Access-Control-Allow-Origin":
-          "https://illustrious-froyo-6855b5.netlify.app",
-      },
       body: formData,
     };
 
